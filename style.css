@@ -7,43 +7,16 @@ body{
     width: 100%;
     height: 100%;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background-color: grey;
+.grid-practice{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
 }
-.nav ul{
-    display: flex;
+.section{
+    background-color: Grey;
+    border: 1px solid black;
 }
-.nav ul li{
-    list-style-type: none;
-    margin-right: 80px;
-}
-.nav a{
-    text-decoration: none;
-    color: #fff;
-    display: inline;
-    position: relative;
-}
-.nav button{
-    background-color: rgb(33, 33, 231);
-    color: #fff;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-}
-li a::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(33, 33, 231);
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-li a:hover::after{
-    transform: scaleX(1);
+.section1{
+    background-color: green;
+    grid-column: 1/3;
 }
